@@ -1,0 +1,3 @@
+<ngc-toggle [buttonList]="taskFilterList" [(selectedButton)]="selectedTaskFilter"></ngc-toggle>
+<ngc-enter-task (taskEntered)="addTask($event)"></ngc-enter-task>
+<ngc-task *ngFor="let task of getFilteredTasks()" [task]="task"></ngc-task>
